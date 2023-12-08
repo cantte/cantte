@@ -1,6 +1,6 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Github } from "lucide-react";
+import { ChevronRight, Github } from "lucide-react";
 
 export default function Home() {
   return (
@@ -48,7 +48,7 @@ export default function Home() {
         </nav>
       </header>
 
-      <div className="relative mx-auto flex max-w-3xl flex-col justify-center">
+      <div className="relative md:mx-auto flex max-w-3xl flex-col justify-center">
         <div className="max-w-[725px] text-center">
           <h1
             className="text-[38px] leading-[46px] md:text-[70px] md:leading-[85px] tracking-[-1.024px;] text-slate-12 font-bold !text-white/80 mb-8 relative">
@@ -69,6 +69,16 @@ export default function Home() {
                 </span>
           </NextLink>
         </div>
+
+        <span
+          className="rainbow-border mb-10 inline-flex items-center justify-center text-[14px] mt-10 w-fit self-center">
+            <span className="inline-flex items-center gap-1 whitespace-nowrap px-3 py-1 text-white">
+              Echa un vistazo a nuestro primer proyecto
+              <NextLink href="https://dew.cantte.com" target="_blank" className="text-cyan-500">
+                <strong>Dew</strong>
+              </NextLink>
+            </span>
+        </span>
       </div>
 
       <footer className="flex h-[80px] items-center justify-center text-center flex-col">
